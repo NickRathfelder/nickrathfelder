@@ -1219,6 +1219,15 @@ section {
   border-radius: 0 0 6px 6px;
 }
 
+.resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+  margin-left: 8px; /* matches the left alignment of other headers */
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .side-projects-list {
