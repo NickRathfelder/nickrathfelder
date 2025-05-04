@@ -1227,6 +1227,23 @@ section {
   color: #050d18;
   margin-left: 8px; /* matches the left alignment of other headers */
 }
+.portfolio-download-link {
+  display: inline-block;
+  font-weight: bold;
+  color: #149ddd;
+  background: #e4edf9;
+  padding: 10px 18px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.portfolio-download-link:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /* Responsive */
 @media (max-width: 900px) {
