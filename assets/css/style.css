@@ -1105,42 +1105,27 @@ section {
   }
 }
 /*--------------------------------------------------------------
-# Side Projects Section
+# Side Projects (styled like Resume)
 --------------------------------------------------------------*/
+
 .side-projects-section {
   padding: 60px 0;
-  background: #f5f8fd;
+  overflow: hidden;
 }
 
-.side-projects-section .section-title {
-  padding-bottom: 30px;
-}
-
-.side-projects-section .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
+.side-projects-section .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
   margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #173b6c;
-}
-
-.side-projects-section .section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #149ddd;
-  bottom: 0;
-  left: 0;
+  color: #050d18;
 }
 
 .side-projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .side-project-tile {
@@ -1152,14 +1137,17 @@ section {
   max-width: 520px;
   min-width: 320px;
   margin-bottom: 30px;
+  border-left: 2px solid #1f5297;
+  position: relative;
 }
 
 .side-project-tile h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: #173b6c;
-  margin-bottom: 15px;
-  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
 }
 
 .side-project-tile p {
@@ -1169,10 +1157,13 @@ section {
 }
 
 .side-project-tile ul {
-  list-style: disc inside;
+  padding-left: 20px;
   margin-bottom: 15px;
   color: #272829;
-  padding-left: 18px;
+}
+
+.side-project-tile ul li {
+  padding-bottom: 8px;
 }
 
 .side-project-group {
