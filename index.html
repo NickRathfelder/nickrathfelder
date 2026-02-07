@@ -387,7 +387,28 @@
         /* Work Experience Section */
         .experience-timeline {
             position: relative;
-            padding-left: 2rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 900px) {
+            .experience-timeline {
+                grid-template-columns: repeat(2, 1fr);
+                padding-left: 0;
+            }
+
+            .experience-timeline::before {
+                display: none;
+            }
+
+            .experience-item {
+                padding-left: 0;
+            }
+
+            .experience-item::before {
+                display: none;
+            }
         }
 
         .experience-timeline::before {
@@ -400,9 +421,15 @@
             background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
         }
 
+        @media (max-width: 899px) {
+            .experience-timeline {
+                padding-left: 2rem;
+            }
+        }
+
         .experience-item {
             position: relative;
-            margin-bottom: 2rem;
+            margin-bottom: 0;
             padding-left: 2rem;
         }
 
@@ -487,6 +514,12 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 1.5rem;
+        }
+
+        @media (min-width: 769px) {
+            .projects-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
         .project-card {
@@ -704,14 +737,26 @@
         }
 
         /* Portfolio Section */
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .portfolio-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 1rem;
-            padding: 3rem;
+            padding: 2.5rem;
             text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .portfolio-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
         }
 
         .portfolio-icon {
@@ -1113,11 +1158,13 @@
             .experience-item {
                 padding-left: 1.5rem;
             }
-        }
 
-        @media (min-width: 769px) {
             .projects-grid {
-                grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+                grid-template-columns: 1fr;
+            }
+
+            .experience-timeline {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1747,17 +1794,30 @@
     <!-- Portfolio Section -->
     <section id="portfolio">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="portfolio-card">
-                <div class="portfolio-icon">
-                    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+            <h2 class="section-title">Portfolio & Resume</h2>
+            <div class="download-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                    </div>
+                    <h3>Complete Portfolio</h3>
+                    <p>Download my full portfolio PDF with detailed project documentation and technical work.</p>
+                    <a href="[path-to-your-portfolio.pdf]" class="download-btn" download>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+                        Download Portfolio
+                    </a>
                 </div>
-                <h3>Complete Portfolio</h3>
-                <p>Download my full portfolio PDF for detailed information about my projects, experience, and technical skills.</p>
-                <a href="[path-to-your-portfolio.pdf]" class="download-btn" download>
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
-                    Download Portfolio PDF
-                </a>
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    </div>
+                    <h3>Resume</h3>
+                    <p>Download my one-page resume with a concise summary of my education, experience, and skills.</p>
+                    <a href="[path-to-your-resume.pdf]" class="download-btn" download>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+                        Download Resume
+                    </a>
+                </div>
             </div>
         </div>
     </section>
