@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="description" content="Electrical Engineering Student Portfolio - Chip Design & Electronics">
-    <title>Nick Rathfelder | EE Portfolio</title>
+    <title>[Your Name] | EE Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -382,6 +382,31 @@
         }
 
         .team-info p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .exchange-info {
+            background: var(--dark-bg);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .exchange-info h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .exchange-term {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .exchange-info p {
             color: var(--text-secondary);
             line-height: 1.7;
         }
@@ -937,16 +962,22 @@
 
         .skills-categories {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 900px) {
+            .skills-categories {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
         .skill-category {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 1rem;
-            padding: 2rem;
+            padding: 1.5rem;
             transition: border-color 0.2s, transform 0.2s;
         }
 
@@ -958,15 +989,15 @@
         .skill-category-header {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .skill-icon {
-            width: 48px;
-            height: 48px;
+            width: 40px;
+            height: 40px;
             background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            border-radius: 0.75rem;
+            border-radius: 0.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -974,27 +1005,27 @@
         }
 
         .skill-icon svg {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             color: white;
         }
 
         .skill-category h3 {
             color: var(--text-primary);
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin: 0;
         }
 
         .skill-items {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.65rem;
         }
 
         .skill-item {
             background: var(--dark-bg);
-            padding: 1rem;
-            border-radius: 0.5rem;
+            padding: 0.65rem 0.85rem;
+            border-radius: 0.375rem;
             border-left: 3px solid var(--accent-color);
             transition: all 0.3s;
         }
@@ -1007,8 +1038,8 @@
         .skill-name {
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
         }
 
         .skill-level {
@@ -1019,12 +1050,12 @@
         }
 
         .skill-percentage {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--primary-color);
             font-weight: 600;
-            padding: 0.25rem 0.75rem;
+            padding: 0.2rem 0.65rem;
             background: rgba(6, 182, 212, 0.15);
-            border-radius: 0.375rem;
+            border-radius: 0.3rem;
             border: 1px solid rgba(6, 182, 212, 0.3);
         }
 
@@ -1058,16 +1089,16 @@
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
 
         .skill-tag-item {
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.75rem;
             background: var(--dark-bg);
             border: 1px solid var(--border-color);
-            border-radius: 0.5rem;
+            border-radius: 0.375rem;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.3s;
         }
 
@@ -1232,43 +1263,47 @@
             /* Skills mobile optimization */
             .skills-categories {
                 grid-template-columns: 1fr;
-                gap: 1.25rem;
+                gap: 1rem;
             }
 
             .skill-category {
-                padding: 1.5rem;
+                padding: 1.25rem;
             }
 
             .skill-category h3 {
-                font-size: 1.15rem;
+                font-size: 1.05rem;
             }
 
             .skill-icon {
-                width: 40px;
-                height: 40px;
+                width: 36px;
+                height: 36px;
             }
 
             .skill-icon svg {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
             }
 
             .skill-item {
-                padding: 0.75rem;
+                padding: 0.6rem 0.75rem;
             }
 
             .skill-name {
-                font-size: 0.9rem;
+                font-size: 0.88rem;
             }
 
             .skill-percentage {
-                font-size: 0.8rem;
-                padding: 0.2rem 0.6rem;
+                font-size: 0.78rem;
+                padding: 0.18rem 0.55rem;
+            }
+
+            .skill-tags {
+                gap: 0.35rem;
             }
 
             .skill-tag-item {
-                font-size: 0.8rem;
-                padding: 0.4rem 0.8rem;
+                font-size: 0.78rem;
+                padding: 0.35rem 0.7rem;
             }
 
             /* Projects mobile optimization */
@@ -1399,7 +1434,7 @@
         }
 
         /* Tablet optimization (769px - 1024px) */
-        @media (min-width: 769px) and (max-width: 1024px) {
+        @media (min-width: 769px) and (max-width: 899px) {
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1419,6 +1454,10 @@
 
             .experience-item {
                 padding-left: 2rem;
+            }
+
+            .skills-categories {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .container {
@@ -1481,15 +1520,15 @@
         <div class="container">
             <div class="hero-wrapper">
                 <div class="hero-content">
-                    <h1>Nick Rathfelder</h1>
+                    <h1>[Your Name]</h1>
                     <p class="subtitle">Electrical Engineering Student</p>
-                    <p class="tagline">Chip Design | Digital Hardware | PCB Development</p>
+                    <p class="tagline">Chip Design | PCB Development | Embedded Systems</p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/nicholas-rathfelder-304542250/" class="social-link" target="_blank">
+                        <a href="[Your LinkedIn URL]" class="social-link" target="_blank">
                             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                             LinkedIn
                         </a>
-                        <a href="https://github.com/NickRathfelder" class="social-link" target="_blank">
+                        <a href="[Your GitHub URL]" class="social-link" target="_blank">
                             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                             GitHub
                         </a>
@@ -1499,7 +1538,7 @@
                     <div class="headshot-container">
                         <!-- Replace this div with: <img src="your-headshot.jpg" alt="Your Name"> -->
                         <div class="headshot-placeholder">
-                            <img src="headshot_circle.png" alt="Nick Rathfelder">
+                            [Your Headshot Image<br>280x280px]
                         </div>
                     </div>
                 </div>
@@ -1519,20 +1558,20 @@
                         Education
                     </h3>
                     <div class="info-item">
-                        <span class="info-label">University: </span>
-                        <span class="info-value">University of Waterloo</span>
+                        <span class="info-label">University</span>
+                        <span class="info-value">[University Name]</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">Degree: </span>
-                        <span class="info-value">B.S. in Electrical Engineering</span>
+                        <span class="info-label">Degree</span>
+                        <span class="info-value">[B.S./M.S. in Electrical Engineering]</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">Expected Graduation: </span>
-                        <span class="info-value">June 2027</span>
+                        <span class="info-label">Expected Graduation</span>
+                        <span class="info-value">[Month Year]</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">GPA: </span>
-                        <span class="info-value"> 3.82 / 4.00</span>
+                        <span class="info-label">GPA</span>
+                        <span class="info-value">[X.XX / 4.00]</span>
                     </div>
                 </div>
 
@@ -1544,15 +1583,19 @@
                     <div class="honors-list">
                         <div class="honor-item">
                             <svg class="honor-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <span>Spring 2025 (3A) - Term Distinction</span>
+                            <span>[Term/Year] - Dean's List / Term Honors</span>
                         </div>
                         <div class="honor-item">
                             <svg class="honor-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <span>Fall 2024 (2B) - Term Distinction</span>
+                            <span>[Term/Year] - Dean's List / Term Honors</span>
                         </div>
                         <div class="honor-item">
                             <svg class="honor-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            <span>Winter 2024 (2A) - Term Distinction</span>
+                            <span>[Term/Year] - Dean's List / Term Honors</span>
+                        </div>
+                        <div class="honor-item">
+                            <svg class="honor-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <span>[Term/Year] - Dean's List / Term Honors</span>
                         </div>
                     </div>
                 </div>
@@ -1563,8 +1606,20 @@
                         Design Team
                     </h3>
                     <div class="team-info">
-                        <h4>UW Baja SAE</h4>
-                        <p>Designed and built the wire harness powering the brake lights, kill switches, and front differential</p>
+                        <h4>[Design Team Name]</h4>
+                        <p>[Brief description of your role and responsibilities on the team. Mention key projects, technologies used, or achievements.]</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Exchange Program
+                    </h3>
+                    <div class="exchange-info">
+                        <h4>[University Name] - [City, Country]</h4>
+                        <p class="exchange-term">[Term/Semester Year]</p>
+                        <p>[Brief description of your exchange experience, courses taken, cultural experiences, or key takeaways from studying abroad.]</p>
                     </div>
                 </div>
                 
@@ -1574,10 +1629,10 @@
                         Relevant Coursework
                     </h3>
                     <div class="coursework-list">
-                        <div class="coursework-item">ECE 222 - Digital Computers</div>
-                        <div class="coursework-item">ECE 318 - Communication Systems</div>
-                        <div class="coursework-item">ECE 340 - Electronic Circuits 2</div>
-                        <div class="coursework-item">ECE 375 - Electromagnetic Fields and Waves</div>
+                        <div class="coursework-item">[Course 1]</div>
+                        <div class="coursework-item">[Course 2]</div>
+                        <div class="coursework-item">[Course 3]</div>
+                        <div class="coursework-item">[Course 4]</div>
                     </div>
                 </div>
             </div>
@@ -1593,20 +1648,22 @@
                 <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
-                            <h3 class="experience-title">FPGA Engineering Intern</h3>
-                            <p class="experience-company">Curtiss-Wright Defense Solutions</p>
-                            <span class="experience-duration">Sep 2025 - Dec 2025</span>
+                            <h3 class="experience-title">[Job Title]</h3>
+                            <p class="experience-company">[Company Name]</p>
+                            <span class="experience-duration">[Start Month Year] - [End Month Year]</span>
                         </div>
                         <div class="experience-description">
-                            <p>Designed, simulated and tested FPGA-based systems supporting aerospace and defense technologies</p>
+                            <p>[Brief description of your role and key responsibilities]</p>
                             <ul>
-                                <li>Developed RTL and integrated 3rd party IP to support the design, simulation and testing of mission-critical aerospace and defense systems</li>
-                                <li>Implemented a UART-based debug interface to provide visibility into internal hardware states during restricted-access environmental testing</li>
+                                <li>[Key achievement or responsibility 1]</li>
+                                <li>[Key achievement or responsibility 2]</li>
+                                <li>[Key achievement or responsibility 3]</li>
                             </ul>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-tag">Verilog</span>
-                            <span class="tech-tag">FPGA</span>
+                            <span class="tech-tag">[Technology 1]</span>
+                            <span class="tech-tag">[Technology 2]</span>
+                            <span class="tech-tag">[Technology 3]</span>
                         </div>
                     </div>
                 </div>
@@ -1615,20 +1672,22 @@
                 <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
-                            <h3 class="experience-title">Controls and Electrical Engineering Intern</h3>
-                            <p class="experience-company">Musashi AI</p>
-                            <span class="experience-duration">Jan 2025 - Apr 2025</span>
+                            <h3 class="experience-title">[Job Title]</h3>
+                            <p class="experience-company">[Company Name]</p>
+                            <span class="experience-duration">[Start Month Year] - [End Month Year]</span>
                         </div>
                         <div class="experience-description">
-                            <p>Developed and tested PLC-based control systems for automotive AI inspection systems</p>
+                            <p>[Brief description of your role and key responsibilities]</p>
                             <ul>
-                                <li>Updated electrical drawings and developed PLC/robot programs for AI automotive inspection machines</li>
-                                <li>Upgraded the Automate 2025 tradeshow inspection cell to allow for onboard chatter inspection of automotive camshafts</li>
+                                <li>[Key achievement or responsibility 1]</li>
+                                <li>[Key achievement or responsibility 2]</li>
+                                <li>[Key achievement or responsibility 3]</li>
                             </ul>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-tag">PLC</span>
-                            <span class="tech-tag">Solidworks</span>
+                            <span class="tech-tag">[Technology 1]</span>
+                            <span class="tech-tag">[Technology 2]</span>
+                            <span class="tech-tag">[Technology 3]</span>
                         </div>
                     </div>
                 </div>
@@ -1637,20 +1696,22 @@
                 <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
-                            <h3 class="experience-title">Electrical Engineering Intern</h3>
-                            <p class="experience-company">Martinrea International</p>
-                            <span class="experience-duration">Sep 2023 - Dec 2023</span>
+                            <h3 class="experience-title">[Job Title]</h3>
+                            <p class="experience-company">[Company Name]</p>
+                            <span class="experience-duration">[Start Month Year] - [End Month Year]</span>
                         </div>
                         <div class="experience-description">
-                            <p>Contributed to continuous improvement of automotive assembly lines through AI inspection systems</p>
+                            <p>[Brief description of your role and key responsibilities]</p>
                             <ul>
-                                <li>Provided support for the engineering team in the maintainence and improvement of the line</li>
-                                <li>Integrated GPIO-triggered serial messaging into the in-house weld inspection system to improve system response time</li>
+                                <li>[Key achievement or responsibility 1]</li>
+                                <li>[Key achievement or responsibility 2]</li>
+                                <li>[Key achievement or responsibility 3]</li>
                             </ul>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">[Technology 1]</span>
+                            <span class="tech-tag">[Technology 2]</span>
+                            <span class="tech-tag">[Technology 3]</span>
                         </div>
                     </div>
                 </div>
@@ -1659,20 +1720,22 @@
                 <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
-                            <h3 class="experience-title">Process Engineering Intern</h3>
-                            <p class="experience-company">Stelco - Lake Erie Works</p>
-                            <span class="experience-duration">Jan 2023 - Apr 2023</span>
+                            <h3 class="experience-title">[Job Title]</h3>
+                            <p class="experience-company">[Company Name]</p>
+                            <span class="experience-duration">[Start Month Year] - [End Month Year]</span>
                         </div>
                         <div class="experience-description">
-                            <p>Supported the analysis and optimization of steel manufacturing processes to improve efficiency and workplace safety</p>
+                            <p>[Brief description of your role and key responsibilities]</p>
                             <ul>
-                                <li>Provided the operating team at the Hot Strip Mill insight into daily operations through the creation of Microsoft Power BI reports</li>
-                                <li>Started the development of a MATLAB and PLC based image analysis program to monitor slag build up on the walls of the BOF</li>
+                                <li>[Key achievement or responsibility 1]</li>
+                                <li>[Key achievement or responsibility 2]</li>
+                                <li>[Key achievement or responsibility 3]</li>
                             </ul>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-tag">MATLAB</span>
-                            <span class="tech-tag">Microsoft Power Bi</span>
+                            <span class="tech-tag">[Technology 1]</span>
+                            <span class="tech-tag">[Technology 2]</span>
+                            <span class="tech-tag">[Technology 3]</span>
                         </div>
                     </div>
                 </div>
@@ -1700,7 +1763,7 @@
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
-                                <div class="skill-name">Verilog/VHDL</div>
+                                <div class="skill-name">Python</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Advanced</span>
                                 </div>
@@ -1712,13 +1775,7 @@
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <div class="skill-name">Python</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">TCL</div>
+                                <div class="skill-name">Verilog/VHDL</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Intermediate</span>
                                 </div>
@@ -1742,31 +1799,25 @@
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
-                                <div class="skill-name">Xilinx Vivado</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Advanced</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Quartus Prime</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Advanced</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
                                 <div class="skill-name">Altium Designer</div>
                                 <div class="skill-level">
-                                    <span class="skill-percentage">Advanced</span>
+                                    <span class="skill-percentage">Proficient</span>
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <div class="skill-name">ModelSim</div>
+                                <div class="skill-name">Xilinx Vivado</div>
+                                <div class="skill-level">
+                                    <span class="skill-percentage">Proficient</span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">SolidWorks</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Intermediate</span>
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <div class="skill-name">LTSpice</div>
+                                <div class="skill-name">KiCad</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Intermediate</span>
                                 </div>
@@ -1784,7 +1835,7 @@
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
-                                <div class="skill-name">Circuit Design</div>
+                                <div class="skill-name">PCB Design & Layout</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Advanced</span>
                                 </div>
@@ -1792,28 +1843,21 @@
                             <div class="skill-item">
                                 <div class="skill-name">Soldering (SMD/Through-hole)</div>
                                 <div class="skill-level">
-                                    <span class="skill-percentage">Advanced</span>
+                                    <span class="skill-percentage">Proficient</span>
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <div class="skill-name">Circuit Simulation</div>
+                                <div class="skill-name">Circuit Design</div>
                                 <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
+                                    <span class="skill-percentage">Proficient</span>
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <div class="skill-name">Timing Analysis</div>
+                                <div class="skill-name">Embedded Systems</div>
                                 <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
+                                    <span class="skill-percentage">Proficient</span>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Scope Capture</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
 
@@ -1830,6 +1874,7 @@
                             <div class="skill-tag-item">Logic Analyzer</div>
                             <div class="skill-tag-item">Multimeter</div>
                             <div class="skill-tag-item">Function Generator</div>
+                            <div class="skill-tag-item">Power Supply</div>
                             <div class="skill-tag-item">Spectrum Analyzer</div>
                         </div>
                     </div>
@@ -1843,11 +1888,12 @@
                             <h3>Microcontrollers & Boards</h3>
                         </div>
                         <div class="skill-tags">
-                            <div class="skill-tag-item">Xilinx Spartan FPGA</div>
-                            <div class="skill-tag-item">Altera Max 10 FPGA</div>
                             <div class="skill-tag-item">STM32</div>
-                            <div class="skill-tag-item">ARM Cortex</div>
+                            <div class="skill-tag-item">Arduino</div>
                             <div class="skill-tag-item">Raspberry Pi</div>
+                            <div class="skill-tag-item">ESP32</div>
+                            <div class="skill-tag-item">Xilinx FPGAs</div>
+                            <div class="skill-tag-item">ARM Cortex</div>
                         </div>
                     </div>
 
@@ -1860,11 +1906,12 @@
                             <h3>Protocols & Interfaces</h3>
                         </div>
                         <div class="skill-tags">
+                            <div class="skill-tag-item">I2C</div>
+                            <div class="skill-tag-item">SPI</div>
                             <div class="skill-tag-item">UART</div>
                             <div class="skill-tag-item">USB</div>
-                            <div class="skill-tag-item">I2C</div>
-                            <div class="skill-tag-item">JTAG</div>
-                            <div class="skill-tag-item">SPI</div>
+                            <div class="skill-tag-item">CAN</div>
+                            <div class="skill-tag-item">Ethernet</div>
                         </div>
                     </div>
                 </div>
@@ -2072,7 +2119,7 @@
                     </div>
                     <h3>Complete Portfolio</h3>
                     <p>Download my full portfolio PDF with detailed project documentation and technical work.</p>
-                    <a href="/assets/Portfolio050325.pdf" class="download-btn" download>
+                    <a href="[path-to-your-portfolio.pdf]" class="download-btn" download>
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
                         Download Portfolio
                     </a>
@@ -2083,7 +2130,7 @@
                     </div>
                     <h3>Resume</h3>
                     <p>Download my one-page resume with a concise summary of my education, experience, and skills.</p>
-                    <a href="/assets/Resume020826.pdf" class="download-btn" download>
+                    <a href="[path-to-your-resume.pdf]" class="download-btn" download>
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
                         Download Resume
                     </a>
@@ -2127,7 +2174,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Nick Rathfelder. All rights reserved.</p>
+            <p>&copy; 2026 [Your Name]. All rights reserved.</p>
         </div>
     </footer>
 
@@ -2198,13 +2245,13 @@
             try {
                 // SETUP REQUIRED: Replace with your Formspree endpoint
                 // Sign up at formspree.io and replace YOUR_FORM_ID below
-                 const response = await fetch('https://formspree.io/f/mdalopgj', {
-                     method: 'POST',
-                     body: formData,
-                     headers: {
-                         'Accept': 'application/json'
-                     }
-                 });
+                // const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                //     method: 'POST',
+                //     body: formData,
+                //     headers: {
+                //         'Accept': 'application/json'
+                //     }
+                // });
                 
                 // Simulated success for demo
                 await new Promise(resolve => setTimeout(resolve, 1000));
