@@ -937,16 +937,9 @@
 
         .skills-categories {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        @media (min-width: 900px) {
-            .skills-categories {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 1.5rem;
-            }
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
         }
 
         .skill-category {
@@ -1239,7 +1232,7 @@
             /* Skills mobile optimization */
             .skills-categories {
                 grid-template-columns: 1fr;
-                gap: 1rem;
+                gap: 1.25rem;
             }
 
             .skill-category {
@@ -1405,8 +1398,8 @@
             }
         }
 
-        /* Tablet optimization (769px - 899px) */
-        @media (min-width: 769px) and (max-width: 899px) {
+        /* Tablet optimization (769px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1426,10 +1419,6 @@
 
             .experience-item {
                 padding-left: 2rem;
-            }
-
-            .skills-categories {
-                grid-template-columns: repeat(2, 1fr);
             }
 
             .container {
@@ -2026,24 +2015,6 @@
                             <div class="tech-stack">
                                 <span class="tech-tag">STM32</span>
                                 <span class="tech-tag">Breadboard</span>
-                            </div>
-                        </div>
-                        <div class="additional-card">
-                            <span class="project-type">[PCB/FPGA/STM32]</span>
-                            <h4>[Small Project 4]</h4>
-                            <p>[Brief description of what this project does and key technologies used]</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
-                            </div>
-                        </div>
-                        <div class="additional-card">
-                            <span class="project-type">[PCB/FPGA/STM32]</span>
-                            <h4>[Small Project 5]</h4>
-                            <p>[Brief description of what this project does and key technologies used]</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
                             </div>
                         </div>
                     </div>
