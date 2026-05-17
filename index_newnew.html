@@ -715,6 +715,25 @@
             gap: 1.5rem;
         }
 
+        @media (min-width: 900px) {
+            .additional-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            /* Center the last 2 items when there are 5 total */
+            .additional-card:nth-child(4) {
+                grid-column: 1 / 2;
+                margin-left: auto;
+                margin-right: 0.75rem;
+            }
+
+            .additional-card:nth-child(5) {
+                grid-column: 2 / 3;
+                margin-left: 0.75rem;
+                margin-right: auto;
+            }
+        }
+
         .additional-card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
