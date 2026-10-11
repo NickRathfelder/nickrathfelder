@@ -386,31 +386,6 @@
             line-height: 1.7;
         }
 
-        .exchange-info {
-            background: var(--dark-bg);
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            border-left: 3px solid var(--accent-color);
-        }
-
-        .exchange-info h4 {
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .exchange-term {
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-        }
-
-        .exchange-info p {
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
         /* Work Experience Section */
         .experience-timeline {
             position: relative;
@@ -970,6 +945,7 @@
         @media (min-width: 900px) {
             .skills-categories {
                 grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
             }
         }
 
@@ -977,7 +953,7 @@
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 1rem;
-            padding: 1.5rem;
+            padding: 2rem;
             transition: border-color 0.2s, transform 0.2s;
         }
 
@@ -989,15 +965,15 @@
         .skill-category-header {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .skill-icon {
-            width: 40px;
-            height: 40px;
+            width: 48px;
+            height: 48px;
             background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            border-radius: 0.5rem;
+            border-radius: 0.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1005,27 +981,27 @@
         }
 
         .skill-icon svg {
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             color: white;
         }
 
         .skill-category h3 {
             color: var(--text-primary);
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             margin: 0;
         }
 
         .skill-items {
             display: flex;
             flex-direction: column;
-            gap: 0.65rem;
+            gap: 1rem;
         }
 
         .skill-item {
             background: var(--dark-bg);
-            padding: 0.65rem 0.85rem;
-            border-radius: 0.375rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
             border-left: 3px solid var(--accent-color);
             transition: all 0.3s;
         }
@@ -1038,8 +1014,8 @@
         .skill-name {
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 0.35rem;
-            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
         }
 
         .skill-level {
@@ -1050,12 +1026,12 @@
         }
 
         .skill-percentage {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: var(--primary-color);
             font-weight: 600;
-            padding: 0.2rem 0.65rem;
+            padding: 0.25rem 0.75rem;
             background: rgba(6, 182, 212, 0.15);
-            border-radius: 0.3rem;
+            border-radius: 0.375rem;
             border: 1px solid rgba(6, 182, 212, 0.3);
         }
 
@@ -1089,16 +1065,16 @@
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.4rem;
+            gap: 0.5rem;
         }
 
         .skill-tag-item {
-            padding: 0.4rem 0.75rem;
+            padding: 0.5rem 1rem;
             background: var(--dark-bg);
             border: 1px solid var(--border-color);
-            border-radius: 0.375rem;
+            border-radius: 0.5rem;
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             transition: all 0.3s;
         }
 
@@ -1267,43 +1243,39 @@
             }
 
             .skill-category {
-                padding: 1.25rem;
+                padding: 1.5rem;
             }
 
             .skill-category h3 {
-                font-size: 1.05rem;
+                font-size: 1.15rem;
             }
 
             .skill-icon {
-                width: 36px;
-                height: 36px;
+                width: 40px;
+                height: 40px;
             }
 
             .skill-icon svg {
-                width: 18px;
-                height: 18px;
+                width: 20px;
+                height: 20px;
             }
 
             .skill-item {
-                padding: 0.6rem 0.75rem;
+                padding: 0.75rem;
             }
 
             .skill-name {
-                font-size: 0.88rem;
+                font-size: 0.9rem;
             }
 
             .skill-percentage {
-                font-size: 0.78rem;
-                padding: 0.18rem 0.55rem;
-            }
-
-            .skill-tags {
-                gap: 0.35rem;
+                font-size: 0.8rem;
+                padding: 0.2rem 0.6rem;
             }
 
             .skill-tag-item {
-                font-size: 0.78rem;
-                padding: 0.35rem 0.7rem;
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
             }
 
             /* Projects mobile optimization */
@@ -1433,7 +1405,7 @@
             }
         }
 
-        /* Tablet optimization (769px - 1024px) */
+        /* Tablet optimization (769px - 899px) */
         @media (min-width: 769px) and (max-width: 899px) {
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -1571,7 +1543,7 @@
                     </div>
                     <div class="info-item">
                         <span class="info-label">GPA: </span>
-                        <span class="info-value">3.82 / 4.00</span>
+                        <span class="info-value"> 3.82 / 4.00</span>
                     </div>
                 </div>
 
@@ -1606,18 +1578,6 @@
                         <p>Designed and built the wire harness powering the brake lights, kill switches, and front differential</p>
                     </div>
                 </div>
-
-                <div class="info-card">
-                    <h3>
-                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                        Exchange Program
-                    </h3>
-                    <div class="exchange-info">
-                        <h4>Universidad Carlos lll of Madrid - Madrid, Spain</h4>
-                        <p class="exchange-term">Winter 2025 (3B)</p>
-                        <!--<p>[Brief description of your exchange experience, courses taken, cultural experiences, or key takeaways from studying abroad.]</p> -->
-                    </div>
-                </div>
                 
                 <div class="info-card">
                     <h3>
@@ -1625,12 +1585,12 @@
                         Relevant Coursework
                     </h3>
                     <div class="coursework-list">
-                        <div class="coursework-item">ECE 318 - Communication Systems</div>
                         <div class="coursework-item">ECE 222 - Digital Computers</div>
-                        <div class="coursework-item">ECE 358 - Computer Networks (UC3M)</div>
+                        <div class="coursework-item">ECE 318 - Communication Systems</div>
                         <div class="coursework-item">ECE 340 - Electronic Circuits 2</div>
-                        <div class="coursework-item">ECE 373 - Radio Frequency and Microwave Circuits (UC3M)</div>
+                        <div class="coursework-item">ECE 298 - Instrumentation and Prototyping</div>
                         <div class="coursework-item">ECE 375 - Electromagnetic Fields and Waves</div>
+                        <div class="coursework-item">ECE 373 - Radio Frequency and Microwave Circuits (Exchange)</div>
                     </div>
                 </div>
             </div>
@@ -1737,9 +1697,9 @@
     <section id="skills">
         <div class="container">
             <div class="skills-container">
-                <h2 class="section-title">Technical Skills</h2>
+                <h2 class="section-title">Key Technical Skills</h2>
                 <div class="skills-intro">
-                    <p>A comprehensive overview of my technical capabilities across hardware, software, and engineering tools.</p>
+                    <p>A comprehensive overview of my key technical capabilities across hardware and software.</p>
                 </div>
 
                 <div class="skills-categories">
@@ -1770,18 +1730,6 @@
                                     <span class="skill-percentage">Intermediate</span>
                                 </div>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-name">TCL</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">MATLAB</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -1801,12 +1749,6 @@
                                 </div>
                             </div>
                             <div class="skill-item">
-                                <div class="skill-name">Quartus Prime</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Advanced</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
                                 <div class="skill-name">Altium Designer</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Advanced</span>
@@ -1814,12 +1756,6 @@
                             </div>
                             <div class="skill-item">
                                 <div class="skill-name">ModelSim</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">LTSpice</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Intermediate</span>
                                 </div>
@@ -1837,7 +1773,7 @@
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
-                                <div class="skill-name">Circuit Design</div>
+                                <div class="skill-name">Circuit Design/Simulation</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Advanced</span>
                                 </div>
@@ -1846,18 +1782,6 @@
                                 <div class="skill-name">Soldering (SMD/Through-hole)</div>
                                 <div class="skill-level">
                                     <span class="skill-percentage">Advanced</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Scope Capture</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Advanced</span>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Circuit Simulation</div>
-                                <div class="skill-level">
-                                    <span class="skill-percentage">Intermediate</span>
                                 </div>
                             </div>
                             <div class="skill-item">
@@ -1933,104 +1857,10 @@
                 <!-- Featured Projects -->
                 <div class="featured-projects">
                     <div class="projects-grid">
-                        <!-- Project 1: STM32 + PCB + 3D Printing -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                [Project Image - PCB Layout/3D Model - 1200x800px recommended]
-                            </div>
-                            <div class="project-content">
-                                <div class="project-header">
-                                    <div>
-                                        <span class="project-type pcb">
-                                            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M10 2v2H8v2h2v2h2V6h2V4h-2V2h-2zm6 6v2h-2v2h2v2h2v-2h2v-2h-2V8h-2zM6 8v2H4v2h2v2h2v-2h2v-2H8V8H6zm8 6v2h-2v2h2v2h2v-2h2v-2h-2v-2h-2zm-6 0v2H6v2h2v2h2v-2h2v-2h-2v-2H8z"/></svg>
-                                            STM32 + PCB Design
-                                        </span>
-                                    </div>
-                                </div>
-                                <h3>[STM32 PCB Project Name]</h3>
-                                <p class="project-description">
-                                    [Description of your STM32-based project with custom PCB design and 3D printed enclosure]
-                                </p>
-                                <div class="project-highlights">
-                                    <h4>Key Features</h4>
-                                    <ul>
-                                        <li>Custom PCB design with [X]-layer board</li>
-                                        <li>STM32 microcontroller programming in [language]</li>
-                                        <li>SolidWorks 3D modeling for enclosure and mechanical parts</li>
-                                        <li>[Additional feature specific to your project]</li>
-                                    </ul>
-                                </div>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">STM32</span>
-                                    <span class="tech-tag">KiCad/Altium</span>
-                                    <span class="tech-tag">SolidWorks</span>
-                                    <span class="tech-tag">C/C++</span>
-                                    <span class="tech-tag">[Other Tech]</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="[GitHub Repo URL]" class="project-link" target="_blank">
-                                        <svg fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                                        View Code
-                                    </a>
-                                    <a href="[PCB Files URL]" class="project-link secondary" target="_blank">
-                                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                                        Design Files
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Project 2: STM32 + Breadboard Prototype -->
-                        <div class="project-card">
-                            <div class="project-image">
-                                [Project Image - Breadboard Prototype/PCB - 1200x800px recommended]
-                            </div>
-                            <div class="project-content">
-                                <div class="project-header">
-                                    <div>
-                                        <span class="project-type pcb">
-                                            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M10 2v2H8v2h2v2h2V6h2V4h-2V2h-2zm6 6v2h-2v2h2v2h2v-2h2v-2h-2V8h-2zM6 8v2H4v2h2v2h2v-2h2v-2H8V8H6zm8 6v2h-2v2h2v2h2v-2h2v-2h-2v-2h-2zm-6 0v2H6v2h2v2h2v-2h2v-2h-2v-2H8z"/></svg>
-                                            STM32 + PCB Design
-                                        </span>
-                                    </div>
-                                </div>
-                                <h3>[STM32 Prototyping Project Name]</h3>
-                                <p class="project-description">
-                                    [Description of your STM32 project with breadboard prototyping and final PCB design]
-                                </p>
-                                <div class="project-highlights">
-                                    <h4>Development Process</h4>
-                                    <ul>
-                                        <li>Initial breadboard prototyping and testing</li>
-                                        <li>Circuit validation and component selection</li>
-                                        <li>Custom PCB design and layout</li>
-                                        <li>[Additional feature specific to your project]</li>
-                                    </ul>
-                                </div>
-                                <div class="tech-stack">
-                                    <span class="tech-tag">STM32</span>
-                                    <span class="tech-tag">KiCad/Altium</span>
-                                    <span class="tech-tag">C/C++</span>
-                                    <span class="tech-tag">[Peripheral/Protocol]</span>
-                                    <span class="tech-tag">[Other Tech]</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="[GitHub Repo URL]" class="project-link" target="_blank">
-                                        <svg fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                                        View Code
-                                    </a>
-                                    <a href="[Schematic URL]" class="project-link secondary" target="_blank">
-                                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                                        Schematics
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Project 3: FPGA Design -->
                         <div class="project-card">
                             <div class="project-image">
-                                [Project Image - FPGA/Timing Diagram - 1200x800px recommended]
+                                <img src="/assets/img/main_projects/fft_core_cover.jpg" alt="FFT Core">
                             </div>
                             <div class="project-content">
                                 <div class="project-header">
@@ -2041,34 +1871,113 @@
                                         </span>
                                     </div>
                                 </div>
-                                <h3>[FPGA Project Name]</h3>
+                                <h3>FFT Core</h3>
                                 <p class="project-description">
-                                    [Description of your FPGA design project including simulation and hardware testing]
+                                    Custom 1024-point decimation-in-time FFT core
                                 </p>
                                 <div class="project-highlights">
                                     <h4>Design & Verification</h4>
                                     <ul>
-                                        <li>HDL design and implementation in [Verilog/VHDL]</li>
-                                        <li>Simulation and verification using [testbench/tools]</li>
-                                        <li>Synthesis and deployment to [FPGA board model]</li>
-                                        <li>Hardware testing and validation on prototype board</li>
+                                        <li>Designed iterative, 10-stage computation core for controlling a single complex butterfly unit</li>
+                                        <li>Implemented state machine for iteration and address generation</li>
+                                        <li>Pipelined output stream to be AXI4 stream compliant</li>
+                                        <li>Simulated DC, nyquist, and custom sinusoidal input signals using custom testbench</li>
+
                                     </ul>
                                 </div>
                                 <div class="tech-stack">
                                     <span class="tech-tag">Xilinx Vivado</span>
-                                    <span class="tech-tag">Verilog/VHDL</span>
-                                    <span class="tech-tag">[FPGA Board]</span>
-                                    <span class="tech-tag">ModelSim/Simulation</span>
-                                    <span class="tech-tag">[Other Tech]</span>
+                                    <span class="tech-tag">Verilog</span>
+                                    <span class="tech-tag">TCL</span>
+                                    <span class="tech-tag">Simulation</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="[GitHub Repo URL]" class="project-link" target="_blank">
+                                    <a href="https://github.com/NickRathfelder/FFT_1024_Core" class="project-link" target="_blank">
                                         <svg fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
                                         View HDL Code
                                     </a>
-                                    <a href="[Documentation URL]" class="project-link secondary" target="_blank">
-                                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-                                        Documentation
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 1: STM32 + PCB + 3D Printing -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/assets/img/main_projects/coilgun_cover.jpg" alt="Electromagnetic Launcher">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-type pcb">
+                                            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M10 2v2H8v2h2v2h2V6h2V4h-2V2h-2zm6 6v2h-2v2h2v2h2v-2h2v-2h-2V8h-2zM6 8v2H4v2h2v2h2v-2h2v-2H8V8H6zm8 6v2h-2v2h2v2h2v-2h2v-2h-2v-2h-2zm-6 0v2H6v2h2v2h2v-2h2v-2h-2v-2H8z"/></svg>
+                                            STM32 + PCB Design
+                                        </span>
+                                    </div>
+                                </div>
+                                <h3>Electromagnetic Launcher</h3>
+                                <p class="project-description">
+                                    Five-stage battery powered coilgun prototype
+                                </p>
+                                <div class="project-highlights">
+                                    <h4>Key Features</h4>
+                                    <ul>
+                                        <li>Custom two layer PCB for interfacing with STM32 Black Pill</li>
+                                        <li>Implemented simple coil timing sequencing for firing mechanism on STM32</li>
+                                        <li>Designed and 3D printed all coil stages using Solidworks</li>
+                                        <li>Assembled and tested base functionality with simple wire harness</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">STM32</span>
+                                    <span class="tech-tag">Altium</span>
+                                    <span class="tech-tag">SolidWorks</span>
+                                    <span class="tech-tag">C++</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/NickRathfelder/Electromagnetic_Launcher" class="project-link" target="_blank">
+                                        <svg fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                                        View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: RF/Microwave -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/assets/img/main_projects/reflectometer_cover.jpg" alt="RF Reflectometer">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-type pcb">
+                                            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M10 2v2H8v2h2v2h2V6h2V4h-2V2h-2zm6 6v2h-2v2h2v2h2v-2h2v-2h-2V8h-2zM6 8v2H4v2h2v2h2v-2h2v-2H8V8H6zm8 6v2h-2v2h2v2h2v-2h2v-2h-2v-2h-2zm-6 0v2H6v2h2v2h2v-2h2v-2h-2v-2H8z"/></svg>
+                                            RF/Microwave
+                                        </span>
+                                    </div>
+                                </div>
+                                <h3>RF Reflectometer</h3>
+                                <p class="project-description">
+                                    Dual output port RF reflectometer integrated on a full microstrip PCB
+                                </p>
+                                <div class="project-highlights">
+                                    <h4>Development Process</h4>
+                                    <ul>
+                                        <li>Designed using a coupled microstrip directional coupler, a wilkinson divider and an RF amplifier</li>
+                                        <li>Generated full-layout PCB layout in Cadence AWR, utilizing small microstrips for all ports</li>
+                                        <li>Utilized de-embedding procedure to extract true reflection coefficient</li>
+                                        <li>Simulated with a 5% bandwidth centered at 3.5 GHz using Cadence AWR</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Cadence AWR</span>
+                                    <span class="tech-tag">Layout</span>
+                                    <span class="tech-tag">Smith Chart</span>
+                                    <span class="tech-tag">De-embedding</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="/assets/RF_Reflectometer.emp" class="project-link" download>
+                                        <svg fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+                                        Design File
                                     </a>
                                 </div>
                             </div>
@@ -2081,30 +1990,48 @@
                     <h3>Additional Projects</h3>
                     <div class="additional-grid">
                         <div class="additional-card">
-                            <span class="project-type">[PCB/FPGA/STM32]</span>
-                            <h4>[Small Project 1]</h4>
-                            <p>[Brief description of what this project does and key technologies used]</p>
+                            <span class="project-type">FPGA</span>
+                            <h4>UART Core + Debug Messager</h4>
+                            <p>Custom 115 200 baud UART core designed using a synchronous dual-clock FIFO, integrated into an FPGA debug messager</p>
                             <div class="tech-stack">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
+                                <span class="tech-tag">Xilinx Spartan 7</span>
+                                <span class="tech-tag">UART</span>
                             </div>
                         </div>
                         <div class="additional-card">
-                            <span class="project-type">[PCB/FPGA/STM32]</span>
-                            <h4>[Small Project 2]</h4>
-                            <p>[Brief description of what this project does and key technologies used]</p>
+                            <span class="project-type">FPGA</span>
+                            <h4>FPGA Traffic Light Controller</h4>
+                            <p>Sequential E-W and N-S traffic light controller designed using a custom mealy state machine</p>
                             <div class="tech-stack">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
+                                <span class="tech-tag">Altera Max 10</span>
+                                <span class="tech-tag">GPIO</span>
                             </div>
                         </div>
                         <div class="additional-card">
-                            <span class="project-type">[PCB/FPGA/STM32]</span>
-                            <h4>[Small Project 3]</h4>
-                            <p>[Brief description of what this project does and key technologies used]</p>
+                            <span class="project-type">Electrical</span>
+                            <h4>Water Reservoir Control System</h4>
+                            <p>STM32-based control system for automating the irrigation of three different zones on a user defined schedule</p>
                             <div class="tech-stack">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
+                                <span class="tech-tag">STM32</span>
+                                <span class="tech-tag">Breadboard</span>
+                            </div>
+                        </div>
+                        <div class="additional-card">
+                            <span class="project-type">PCB</span>
+                            <h4>5V-12V Boost Converter PCB</h4>
+                            <p>5V-12V 2.5A switching boost converter PCB, featuring a power switch and an output indicator LED</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Switching PSU</span>
+                                <span class="tech-tag">PWM</span>
+                            </div>
+                        </div>
+                        <div class="additional-card">
+                            <span class="project-type">PCB</span>
+                            <h4>AC-DC Dual Output Power Supply</h4>
+                            <p>Custom 120VAC to &plusmn;20VDC power supply designed using a power transformer, a full-wave rectifier and dual output regulators</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Rectifier</span>
+                                <span class="tech-tag">LDO</span>
                             </div>
                         </div>
                     </div>
@@ -2124,7 +2051,7 @@
                     </div>
                     <h3>Complete Portfolio</h3>
                     <p>Download my full portfolio PDF with detailed project documentation and technical work.</p>
-                    <a href="/assets/Portfolio050325.pdf" class="download-btn" download>
+                    <a href="/assets/Portfolio051526.pdf" class="download-btn" download>
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
                         Download Portfolio
                     </a>
@@ -2135,7 +2062,7 @@
                     </div>
                     <h3>Resume</h3>
                     <p>Download my one-page resume with a concise summary of my education, experience, and skills.</p>
-                    <a href="/assets/Resume020826.pdf" class="download-btn" download>
+                    <a href="/assets/Resume051526.pdf" class="download-btn" download>
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
                         Download Resume
                     </a>
@@ -2179,7 +2106,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Nick Rahfelder. All rights reserved.</p>
+            <p>&copy; 2026 Nick Rathfelder. All rights reserved.</p>
         </div>
     </footer>
 
